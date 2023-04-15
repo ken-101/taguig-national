@@ -9,7 +9,6 @@
 }
 
 body {
-    width: 90vw;
     padding: 0;
   margin: 0;
   background-color: #fff8f8;
@@ -351,31 +350,38 @@ nav {
     position: sticky;
     top: 17px;
     height: 100vh;
-    width: 9vw;
     z-index: -1;
     .container-1{
         position: absolute;
-        width: 90vw;
-        height: 100vh;}
-        .first{
-            width: 100vw;
+        height: 100vh;
         }
+    .banner{
+      height: 88vh;
+      z-index: 1;}  
+      .first{
+        height: 95vh;
+        object-fit:cover;
+        
+      }
+      .banner2{
+        display: flex;
+        width: 98.5vw;
+        position: absolute;
+      justify-content: center;
+      font-family: 'Trirong';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 27px;
+      line-height: 40px;
+      background-color: #b1040d;
+      color: #fff8f8;
+      bottom: 17px;
+
+      }
     }
 .frame{
-    width: 100vw;
     background-color: #fff8f8;
 
-    .fr1-1-1{
-        display: flex;
-        justify-content: center;
-        font-family: 'Trirong';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 27px;
-        line-height: 40px;
-        background-color: #b1040d;
-        color: #fff8f8;
-    }
     .fr1-1-2{
         display: flex;
         padding-top: 35px;
@@ -385,4 +391,26 @@ nav {
         font-weight: bold;
         font-size: 24px;
     }
+    .goal-text{
+      font-family: 'Trirong';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 50px 0 50px;
+    }
+    .fr1-2 {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
 }
