@@ -37,7 +37,6 @@ p {
 header {
   background: rgba(35, 35, 35, 0.63);
   text-align: center;
-  position: -webkit-sticky;
   position: sticky;
   z-index: 999;
   top: 17px;
@@ -360,7 +359,6 @@ nav a:hover {
 }
 
 #container {
-  position: -webkit-sticky;
   position: sticky;
   top: 17px;
   height: 100vh;
