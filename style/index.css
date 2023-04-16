@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 :root {
-  --background:#fd2424d9;
+  --background: #fd2424d9;
 }
 
 * {
@@ -74,11 +74,11 @@ header {
   padding: 0;
   margin: 0;
   background-color: #fd2424;
+  /* (phone) about us style end*/
 }
 
-/* (phone) about us style end*/
 /* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
+ * allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -280,7 +280,8 @@ nav a:hover {
     margin: 10px 0 0 0;
     padding: 0;
   }
-  .fr1-left, .fr1-right {
+  .fr1-left,
+  .fr1-right {
     display: grid;
     grid-gap: 20px;
     align-items: center;
@@ -307,12 +308,16 @@ nav a:hover {
     background-color: #fff8f8;
     padding: 5px 5px 10px 5px;
   }
-  .news-3, .event-3, .announcement-3 {
+  .news-3,
+  .event-3,
+  .announcement-3 {
     display: flex;
     justify-content: right;
     padding: 1rem 4rem 1rem 0;
   }
-  .news-link, .event-link, .announcement-link {
+  .news-link,
+  .event-link,
+  .announcement-link {
     font-size: 20px;
   }
   .contactus-3 {
@@ -416,11 +421,14 @@ nav a:hover {
 .frame .fr1-2 {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  padding: 30px 0 30% 0;
-  height: 0;
+  background-color: #b1040d;
+  height: 50vh;
 }
 .frame .fr1-2 iframe {
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
 }/*# sourceMappingURL=index.css.map */
