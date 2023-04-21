@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600')
+
+:root
+  --background: #fd2424d9
+%ken
+  position: absolute
+  padding: 0
+  margin: 0
+  top: 78px
+  right: 16px
+  display: none
+  z-index: 3
+*
+  box-sizing: border-box
+  &::before,
+  &::after
+    box-sizing: border-box
+
+body
+  padding: 0
+  margin: 0
+  background-color: #fff8f8
+  font-family: 'Work Sans', sans-serif
+  font-weight: 400
+  overflow-x: hidden
+p
+  font-size: 16px
+  font-family: Arial, sans-serif
+  color: #333
+  line-height: 1.5
+  text-align: center
+  margin: 0
+  padding: 0
+#container
+  min-height: 100%
+  padding-bottom: 50px
+.grey
+  color:#c9c8c8
+
+/* navigation styles start here */
+
+header
+  background: rgba(35, 35, 35, 0.63)
+  text-align: center
+  position: fixed
+  z-index: 9
+  top: 17px
+  width: 100vw
+  padding: 10px 0 10px
+/* (phone) about us style start*/
+
+.op:focus-within .drop-down
+  display: grid
+  grid-template-columns: auto 1fr
+  grid-gap: 20px
+  position: absolute
+
+
+  /* (phone) about us style end*/
+
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
+
+.nav-toggle
+  position: absolute !important
+  top: -9999px !important
+  left: -9999px !important
+  &:focus ~ .nav-toggle-label
+    outline: 3px solid rgba(lightblue, 0.75)
+.nav-toggle-label
+  position: absolute
+  top: 0
+  right: 0
+  margin-right: 2em
+  height: 100%
+  display: flex
+  align-items: center
+.top-left2
+  display: flex
+  grid-column: 2 / 3
+  justify-content: center
+  align-items: center
+  color: #c9c8c8
+  padding: 0 8px 0 8px
+  margin: 0 5px 0 25px
+  font-weight: 800
+.nav-toggle-label span
+  display: block
+  background: white
+  height: 2px
+  width: 2em
+  border-radius: 2px
+  position: relative
+  &::before,
+  &::after
+    display: block
+    background: white
+    height: 2px
+    width: 2em
+    border-radius: 2px
+    position: relative
+a
+ margin-top: 20px
+.nav-toggle-label span
+  &::before,
+  &::after
+    content: ''
+    position: absolute
+  &::before
+    bottom: 7px
+  &::after
+    top: 7px
+nav
+  position: absolute
+  text-align: right
+  top: 100%
+  left: 0
+  background: var(--background)
+  width: 100%
+  transform: scale(1, 0)
+  transform-origin: top
+  transition: transform 400ms ease-in-out
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+  li
+    margin-bottom: 1em
+    margin-right: 1em
+
+  .drop-down
+    @extend %ken
+  .drop-down2
+    @extend %ken
+  .drop-down3
+    @extend %ken
+  a
+    color: white
+    text-decoration: none
+    font-size: 1.2rem
+    text-transform: uppercase
+    opacity: 0
+    transition: opacity 150ms ease-in-out
+    &:hover
+      color: #000
+.nav-toggle:checked ~ nav
+  transform: scale(1, 1)
+  a
+    opacity: 1
+    transition: opacity 250ms ease-in-out 250ms
+.topbar
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+
+
+
+
+@media screen and (min-width: 900px)
+  .timer
+    margin: 0
+    padding: 0
+    font-size: 12px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    position: fixed
+    top: 0
+    background-color: #b1040d
+    height: 17px
+    width: 100vw
+    .timer-left
+      display: flex
+      flex-wrap: nowrap
+      font-size: 14px
+      font-weight: 700
+      font-family: 'Times New Roman', Times, serif
+    .timer-right
+      display: flex
+      flex-wrap: nowrap
+      font-size: 14px
+      font-weight: 700
+      font-family: 'Times New Roman', Times, serif
+      display: flex
+      justify-content: right
+      padding-right:20px
+  #container
+    position: sticky
+    top: 17px
+    height: 100vh
+    z-index: -1
+    .container-1
+      position: absolute
+      height: 100vh
+    .banner
+      height: 88vh
+      z-index: 1
+    .first
+      height: 95vh
+      object-fit: cover
+    .banner2
+      display: flex
+      width: 98.5vw
+      position: absolute
+      justify-content: center
+      font-family: 'Trirong'
+      font-style: normal
+      font-weight: 800
+      font-size: 27px
+      line-height: 40px
+      background-color: #b8252c
+      color: #fff8f8
+      bottom: 17px
+  .frame
+    background-color: #fff8f8
+    .fr1-1-2
+      display: flex
+      padding-top: 35px
+      justify-content: center
+      margin-bottom: 20px
+      font-family: 'Times New Roman', Times, serif
+      font-weight: bold
+      font-size: 24px
+    .goal-text
+      font-family: 'Trirong'
+      font-style: normal
+      font-weight: 800
+      font-size: 20px
+      line-height: 35px
+      text-align: center
+      margin: 0 50px 0 50px
+    .fr1-2
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      height: 70vh
+      iframe
+        width: 850px
+        aspect-ratio: 16/9
+
+    .fr1-3
+      min-width: 200px
+      grid-gap: 70px
+      margin-top: 30px
+      background-color: #c9c8c8
+      
+      .programs
+    
+      div
+        max-height: 490px
+        object-fit: cover
+        .pic
+          object-fit: cover
+          top:10px
+          width: 100%
+          height: 100%
+  .frame
+    .news
+      .news-1
+      .news-2-1
+        display: grid
+        place-items: center
+        grid-template-columns: 1fr .5fr .5fr
+      .news-2-2
+        display: grid
+        place-items: center
+        grid-template-columns: .5fr .5fr 1fr
+        // .news-box
+        //   .news-pic
+        //     .newspic-size
+        //   .news-text
+        //   .absolute
+  .frame
+    .sports-pic
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 30vh
+      background-color: #121212
+      color: white
+      span
+        font-family: 'Asul'
+        font-style: normal
+        font-weight: 700
+        font-size: 96px
+        line-height: 116px
+    
+    /* Phone Style Start */
+
+@media screen and (max-width: 899px)
+  .timer
+    margin: 0
+    padding: 0
+    font-size: 12px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    position: fixed
+    top: 0
+    background-color: #b1040d
+    height: 17px
+    width: 100vw
+    .timer-left
+      display: flex
+      flex-wrap: nowrap
+      font-size: 14px
+      font-weight: 700
+      font-family: 'Times New Roman', Times, serif
+    .timer-right
+      display: flex
+      flex-wrap: nowrap
+      font-size: 14px
+      font-weight: 700
+      font-family: 'Times New Roman', Times, serif
+      display: flex
+      justify-content: right
+      padding-right:20px
+  #container
+    position: sticky
+    top: 0px
+    height: 50vh
+    z-index: -1
+    .container-1
+      position: absolute
+      height: 52vh
+    .banner
+      height: 88vh
+      z-index: 1
+    .first
+      height: 95vh
+      object-fit: cover
+    .banner2
+      display: flex
+      width: 98.5vw
+      position: absolute
+      justify-content: center
+      font-family: 'Trirong'
+      font-style: normal
+      font-weight: 800
+      font-size: 27px
+      line-height: 40px
+      background-color: #b1040d
+      color: #fff8f8
+      bottom: 17px
+  .frame
+    background-color: #fff8f8
+    .fr1-1
+      margin-bottom: 50px
+      .fr1-1-2
+        display: flex
+        padding-top: 35px
+        justify-content: center
+        margin-bottom: 40px
+        font-family: 'Times New Roman', Times, serif
+        font-weight: bold
+        font-size: 24px
+      .goal-text
+        font-family: 'Trirong'
+        font-style: normal
+        font-weight: 800
+        font-size: 20px
+        line-height: 35px
+        text-align: center
+        margin: 0 50px 0 50px
+    .fr1-2
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #4104b1
+      height: 40vh
+      
+      iframe
+        width: 90%
+        aspect-ratio: 16/9
+    .fr1-3
+      min-width: 200px
+      grid-gap: 70px
+      margin-top: 30px
+      background-color: #dadada
+      
+      .programs
+        display: flex
+        align-items: center
+    
+      div
+        max-height: 300px
+        object-fit: cover
+        .pic
+          object-fit: cover
+          top:10px
+          width: 100%
+          height: 100%
+
+.fr1-3
+      display: grid
+      grid-template-columns: 1fr 3fr
+

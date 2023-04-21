@@ -1,0 +1,121 @@
+@media only screen and (min-width: 899px) {
+  header {
+    display: grid;
+    position: fixed;
+    grid-template-columns: 300px 0 3fr;
+    justify-content: left;
+  }
+  header .topbar .top-left2 {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 5px 8px 5px 8px;
+    margin: 0 5px 0 20px;
+    font-family: "Trirong";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 55px;
+  }
+  header .topbar .top-left2:hover {
+    opacity: 70%;
+  }
+  header nav {
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    right: 10rem;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  header nav ul li a {
+    font-family: "Trirong";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+    position: relative;
+  }
+  header nav ul li a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  header nav ul li a:hover::before {
+    transform: scale(1, 1);
+  }
+  header nav .top-font {
+    font-family: "Trirong";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35px;
+    font-size: 24px;
+  }
+  header nav .drop-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: none;
+    gap: 70px;
+    background-color: rgba(253, 36, 36, 0.8509803922);
+    z-index: 3;
+  }
+  header nav .op:focus-within .drop-down {
+    display: grid;
+    grid-template-columns: 150px;
+  }
+  header nav .op:focus-within .admission {
+    margin: -4px 620px 0px 0;
+    padding: 20px 0 10px 0;
+  }
+  header nav .op:focus-within .programs {
+    margin: -4px 422px 0 0;
+    padding: 20px 0 10px 0;
+  }
+  header nav .op:focus-within .about {
+    margin: -4px -30px 0 0;
+    padding: 20px 0 10px 0;
+  }
+  header nav .op:focus-within .abtus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+  header nav .op:focus-within .abtus2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  header .nav-toggle-label {
+    display: none;
+  }
+}/*# sourceMappingURL=desktop.css.map */

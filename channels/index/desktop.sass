@@ -1,0 +1,122 @@
+@mixin flex-center()
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin drop-down()
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+
+@mixin Grid-center()
+  display: grid
+  align-items: center
+
+@mixin top-font()
+  font-family: 'Trirong'
+  font-style: normal
+  font-weight: 800
+  line-height: 35px
+  
+
+
+
+@media only screen and (min-width: 899px)
+  header
+    display: grid
+    position: fixed
+    grid-template-columns: 300px 0 3fr
+    justify-content: left
+
+    .topbar
+      .top-left2
+        grid-column: 2 / 3
+        @include flex-center()
+        color: #ffffff
+        padding: 5px 8px 5px 8px
+        margin: 0 5px 0 20px
+        font-family: 'Trirong'
+        font-style: normal
+        font-weight: 800
+        font-size: 32px
+        line-height: 55px
+
+        &:hover
+          opacity: 70%
+
+    nav
+      position: relative
+      text-align: left
+      transition: none
+      transform: scale(1, 1)
+      background: none
+      top: initial
+      left: initial
+      right: 10rem
+      grid-column: 3 / 4
+      display: flex
+      justify-content: right
+      align-items: center
+      ul
+        display: flex
+        li
+          margin-left: 3em
+          margin-bottom: 0
+          a
+            @include top-font()
+            text-align: center
+            font-size: 20px
+            opacity: 1
+            position: relative
+            &::before
+              content: ''
+              display: block
+              height: 5px
+              background: black
+              position: absolute
+              top: -.75em
+              left: 0
+              right: 0
+              transform: scale(0, 1)
+              transition: transform ease-in-out 250ms
+            &:hover::before
+              transform: scale(1, 1)
+      .top-font
+        @include top-font()
+        font-size: 24px
+        
+      .drop-down
+        @include drop-down()
+        display: none
+        gap: 70px
+        background-color: #fd2424d9
+        z-index: 3
+
+      .op:focus-within
+        .drop-down
+          display: grid
+          grid-template-columns: 150px
+        .admission
+          margin: -4px 620px 0px 0
+          padding: 20px 0 10px 0
+        .programs
+          margin: -4px 422px 0 0
+          padding: 20px 0 10px 0
+        .about
+          margin: -4px -30px 0 0
+          padding: 20px 0 10px 0
+
+        .abtus
+          @include flex-center()
+          margin: 0
+          padding: 0
+          top: 0
+        .abtus2
+          @include flex-center()
+          
+          padding: 0
+
+
+    .nav-toggle-label
+      display: none

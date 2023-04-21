@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+}
+
+/* Media query for mobile landscape */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles for mobile landscape */
+}
+
+/* Media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for desktops */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}
+
+
 :root {
   --background:#fd2424d9;}
 
@@ -70,10 +91,10 @@ header {
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
-  left: -9999px !important;
-  &:focus ~ .nav-toggle-label {
+  left: -9999px !important;}
+.nav-toggle:focus ~ .nav-toggle-label {
     outline: 3px solid rgba(lightblue, 0.75);}
-}
+
 
 .nav-toggle-label {
   position: absolute;
