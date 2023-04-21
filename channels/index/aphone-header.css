@@ -3,7 +3,7 @@
   --background: #fd2424d9;
 }
 
-nav .drop-down3, nav .drop-down2, nav .drop-down {
+.drop-down {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -18,6 +18,21 @@ nav .drop-down3, nav .drop-down2, nav .drop-down {
 }
 *::before, *::after {
   box-sizing: border-box;
+}
+
+.banner2 {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  font-family: "Trirong";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 40px;
+  background-color: #b1040d;
+  color: #fff8f8;
+  bottom: 10px;
 }
 
 body {
@@ -50,7 +65,7 @@ p {
 
 /* navigation styles start here */
 header {
-  background: rgba(35, 35, 35, 0.63);
+  background: rgba(35, 35, 35, 0.631372549);
   text-align: center;
   position: fixed;
   z-index: 9;
@@ -189,6 +204,7 @@ nav a:hover {
     background-color: #b1040d;
     height: 17px;
     width: 100vw;
+    /* Phone Style Start */
   }
   .timer .timer-left {
     display: flex;
@@ -206,117 +222,6 @@ nav a:hover {
     display: flex;
     justify-content: right;
     padding-right: 20px;
-  }
-  #container {
-    position: sticky;
-    top: 17px;
-    height: 100vh;
-    z-index: -1;
-  }
-  #container .container-1 {
-    position: absolute;
-    height: 100vh;
-  }
-  #container .banner {
-    height: 88vh;
-    z-index: 1;
-  }
-  #container .first {
-    height: 95vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #container .banner2 {
-    display: flex;
-    width: 98.5vw;
-    position: absolute;
-    justify-content: center;
-    font-family: "Trirong";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 27px;
-    line-height: 40px;
-    background-color: #b8252c;
-    color: #fff8f8;
-    bottom: 17px;
-  }
-  .frame {
-    background-color: #fff8f8;
-  }
-  .frame .fr1-1-2 {
-    display: flex;
-    padding-top: 35px;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    font-size: 24px;
-  }
-  .frame .goal-text {
-    font-family: "Trirong";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 35px;
-    text-align: center;
-    margin: 0 50px 0 50px;
-  }
-  .frame .fr1-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 70vh;
-  }
-  .frame .fr1-2 iframe {
-    width: 850px;
-    aspect-ratio: 16/9;
-  }
-  .frame .fr1-3 {
-    min-width: 200px;
-    grid-gap: 70px;
-    margin-top: 30px;
-    background-color: #c9c8c8;
-  }
-  .frame .fr1-3 div {
-    max-height: 490px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .frame .fr1-3 div .pic {
-    -o-object-fit: cover;
-       object-fit: cover;
-    top: 10px;
-    width: 100%;
-    height: 100%;
-  }
-  .frame .news .news-2-1 {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
-  }
-  .frame .news .news-2-2 {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 0.5fr 0.5fr 1fr;
-  }
-  .frame {
-    /* Phone Style Start */
-  }
-  .frame .sports-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    background-color: #121212;
-    color: white;
-  }
-  .frame .sports-pic span {
-    font-family: "Asul";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 116px;
   }
 }
 @media screen and (max-width: 899px) {
@@ -367,20 +272,6 @@ nav a:hover {
     height: 95vh;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  #container .banner2 {
-    display: flex;
-    width: 98.5vw;
-    position: absolute;
-    justify-content: center;
-    font-family: "Trirong";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 27px;
-    line-height: 40px;
-    background-color: #b1040d;
-    color: #fff8f8;
-    bottom: 17px;
   }
   .frame {
     background-color: #fff8f8;
