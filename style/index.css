@@ -34,6 +34,10 @@ p {
   padding-bottom: 50px;
 }
 
+.grey {
+  color: #c9c8c8;
+}
+
 /* navigation styles start here */
 header {
   background: rgba(35, 35, 35, 0.63);
@@ -253,19 +257,17 @@ nav a:hover {
   }
   .frame {
     background-color: #fff8f8;
-    /* Phone Style Start */
   }
   .frame .fr1-1-2 {
     display: flex;
     padding-top: 35px;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     font-size: 24px;
   }
   .frame .goal-text {
-    background-color: #b8252c;
     font-family: "Trirong";
     font-style: normal;
     font-weight: 800;
@@ -279,14 +281,57 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #b8252c;
-    height: 60vh;
+    height: 70vh;
   }
   .frame .fr1-2 iframe {
-    bottom: 0;
-    width: 50%;
-    height: 70%;
+    width: 850px;
+    aspect-ratio: 16/9;
+  }
+  .frame .fr1-3 {
+    min-width: 200px;
+    grid-gap: 70px;
+    margin-top: 30px;
+    background-color: #c9c8c8;
+  }
+  .frame .fr1-3 div {
+    max-height: 490px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .frame .fr1-3 div .pic {
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .frame .news .news-2-1 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+  }
+  .frame .news .news-2-2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+  .frame {
+    /* Phone Style Start */
+  }
+  .frame .sports-pic {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #121212;
+    color: white;
+  }
+  .frame .sports-pic span {
+    font-family: "Asul";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
   }
 }
 @media screen and (max-width: 899px) {
@@ -386,11 +431,8 @@ nav a:hover {
   .frame .fr1-2 iframe {
     width: 90%;
     aspect-ratio: 16/9;
-    justify-content: center;
   }
   .frame .fr1-3 {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
     min-width: 200px;
     grid-gap: 70px;
     margin-top: 30px;
@@ -409,6 +451,11 @@ nav a:hover {
     height: 100%;
   }
 }
+.fr1-3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
 /*  DON'T TOUCH */
 @media screen and (min-width: 900px) {
   .nav-toggle-label {
