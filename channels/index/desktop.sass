@@ -1,116 +1,4 @@
 
-@media screen and (min-width: 900px)
-  #container
-    position: sticky
-    top: 17px
-    height: 100vh
-    z-index: -1
-    .container-1
-      position: sticky
-      height: 100vh
-      .banner
-        height: 88vh
-        z-index: 1
-        .first
-          height: 100vh
-          object-fit: cover
-      .banner2
-        display: flex
-        width: 98.5vw
-        position: absolute
-        justify-content: center
-        font-family: 'Trirong'
-        font-style: normal
-        font-weight: 800
-        font-size: 27px
-        line-height: 40px
-        background-color: #b8252c
-        color: #fff8f8
-        bottom: 50px
-        
-  .frame
-    background-color: #fff8f8
-    .fr1-1-2
-      display: flex
-      padding-top: 35px
-      justify-content: center
-      margin-bottom: 20px
-      font-family: 'Times New Roman' Times serif
-      font-weight: bold
-      font-size: 24px
-    .goal-text
-      font-family: 'Trirong'
-      font-style: normal
-      font-weight: 800
-      font-size: 20px
-      line-height: 35px
-      text-align: center
-      margin: 0 50px 0 50px
-    .fr1-2
-      display: flex
-      justify-content: center
-      align-items: center
-      position: relative
-      height: 70vh
-      iframe
-        width: 850px
-        aspect-ratio: 16/9
-
-    .fr1-3
-      min-width: 200px
-      grid-gap: 70px
-      margin-top: 30px
-      background-color: #c9c8c8
-      
-      .programs
-    
-      div
-        max-height: 490px
-        object-fit: cover
-        .pic
-          object-fit: cover
-          top:10px
-          width: 100%
-          height: 100%
-  .frame
-    .news
-      .news-1
-      .news-2-1
-        display: grid
-        place-items: center
-        grid-template-columns: 1fr .5fr .5fr
-      .news-2-2
-        display: grid
-        place-items: center
-        grid-template-columns: .5fr .5fr 1fr
-        // .news-box
-        //   .news-pic
-        //     .newspic-size
-        //   .news-text
-        //   .absolute
-  .frame
-    .sports-pic
-      display: flex
-      justify-content: center
-      align-items: center
-      height: 30vh
-      background-color: #121212
-      color: white
-      span
-        font-family: 'Asul'
-        font-style: normal
-        font-weight: 700
-        font-size: 96px
-        line-height: 116px
-  
-  
-  
-  
-  
-  
-  
-  
-  
 @mixin flex-center()
   display: flex
   align-items: center
@@ -167,15 +55,15 @@
       background: none
       top: initial
       left: initial
-      right: 10rem
+      right: 8rem
       grid-column: 3 / 4
       display: flex
       justify-content: right
       align-items: center
       ul
+        gap: 30px
         display: flex
         li
-          margin-left: 3em
           margin-bottom: 0
           a
             @include top-font()
@@ -204,7 +92,7 @@
       .drop-down
         @include drop-down()
         display: none
-        gap: 70px
+        gap: 10px
         background-color: #fd2424d9
         z-index: 3
 
@@ -212,12 +100,12 @@
         .drop-down
           
           display: grid
-          grid-template-columns: 150px
+          grid-template-columns: 160px
         .admission
           margin: 5px 620px 0px 0
           padding: 20px 0 10px 0
         .programs
-          margin: 5px 422px 0 0
+          margin: 5px 410px 0 0
           padding: 20px 0 10px 0
         .about
           margin: 5px -30px 0 0

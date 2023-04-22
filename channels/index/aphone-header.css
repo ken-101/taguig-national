@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
-:root {
-  --background: #fd2424d9;
-}
-
 .drop-down {
   position: absolute;
   padding: 0;
