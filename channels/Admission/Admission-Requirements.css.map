@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Admission-Requirements.css"}
+{"version":3,"sources":["Admission-Requirements.sass","Admission-Requirements.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,kDAAA;ACCJ;ADAI;EACI,aAAA;EACA,yBAAA;EACA,UAAA;EACA,aAAA;ACER","file":"Admission-Requirements.css"}

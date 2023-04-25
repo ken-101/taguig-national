@@ -1,1 +1,13 @@
-/*# sourceMappingURL=Admission-Requirements.css.map */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 77px;
+  background-color: rgba(255, 219, 219, 0.831372549);
+}
+main div {
+  display: flex;
+  background-color: #ffdbdb;
+  width: 85%;
+  height: 200vh;
+}/*# sourceMappingURL=Admission-Requirements.css.map */
