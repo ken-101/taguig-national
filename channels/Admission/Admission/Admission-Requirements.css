@@ -1,0 +1,61 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 77px;
+  background-color: #949494;
+}
+main div {
+  display: grid;
+  grid-template-columns: 1fr1fr;
+  background-color: #ffffff;
+  margin: 50px;
+}
+main div ul {
+  display: grid;
+  grid-template-columns: 1fr1fr1fr1fr;
+  place-items: center;
+}
+main div ul div {
+  font-size: 20px;
+  font-weight: 700;
+}
+main div ul div div {
+  border-radius: 5px;
+}
+main div ul div .grade-7 {
+  width: 55rem;
+  border: 1px solid lime;
+}
+main div ul div .grade-11 {
+  width: 320px;
+  border: 1px solid violet;
+}
+main div ul div .grade-12 {
+  width: 325px;
+  border: 1px solid orange;
+}
+main div ul div .grade-other12 {
+  width: 545px;
+  border: 1px solid orange;
+}
+main div ul div .grade-other {
+  width: 320px;
+  border: 1px solid brown;
+}
+main div ul .margin {
+  margin-bottom: 50px;
+}
+main div ul li {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 600;
+}
+main div div {
+  display: grid;
+  grid-template-columns: 1fr1fr;
+  place-items: center;
+}
+main div div h3 {
+  width: 70%;
+}/*# sourceMappingURL=Admission-Requirements.css.map */
