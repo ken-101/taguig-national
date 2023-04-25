@@ -1,4 +1,9 @@
 
+
+
+
+
+  
 @mixin flex-center()
   display: flex
   align-items: center
@@ -98,7 +103,8 @@
 
       .op:focus-within
         .drop-down
-          
+        #text:has(drop-down:hover) .drop-down:not(.highlight)
+        
           display: grid
           grid-template-columns: 160px
         .admission
