@@ -86,7 +86,7 @@
     background-color: rgba(253, 36, 36, 0.8509803922);
     z-index: 3;
   }
-  header nav .op:focus-within #text:has(drop-down:hover) .drop-down:not(.highlight) {
+  header nav .op:focus-within .drop-down {
     display: grid;
     grid-template-columns: 160px;
   }
