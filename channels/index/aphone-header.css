@@ -156,9 +156,6 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-nav a:hover {
-  color: #000;
-}
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
